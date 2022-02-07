@@ -26,7 +26,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/playerImage1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -40,7 +40,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/playerID1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
@@ -49,7 +49,7 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@+id/playerAct1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
@@ -64,14 +64,14 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView5"
+                            android:id="@+id/player1CardA"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             app:srcCompat="@android:drawable/btn_default_small" />
 
                         <ImageView
-                            android:id="@+id/imageView6"
+                            android:id="@+id/player1CardB"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -87,7 +87,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/playerImage2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -101,7 +101,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/playerID2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
@@ -110,7 +110,7 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/playerAct2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
@@ -125,14 +125,14 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView5"
+                            android:id="@+id/player2CardA"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             app:srcCompat="@android:drawable/btn_default_small" />
 
                         <ImageView
-                            android:id="@+id/imageView6"
+                            android:id="@+id/player2CardB"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -148,7 +148,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/playerImage3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -162,7 +162,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/playerID3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
@@ -171,7 +171,7 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/playerAct3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
@@ -186,14 +186,14 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView5"
+                            android:id="@+id/player3CardA"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             app:srcCompat="@android:drawable/btn_default_small" />
 
                         <ImageView
-                            android:id="@+id/imageView6"
+                            android:id="@+id/player3CardB"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -218,7 +218,7 @@
                 android:layout_weight="0">
 
                 <ProgressBar
-                    android:id="@+id/progressBar2"
+                    android:id="@+id/userPlayTimer"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -228,7 +228,7 @@
                     android:progress="80" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/settingsMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -249,21 +249,21 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/dealerCardA"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     app:srcCompat="@android:drawable/btn_default_small" />
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/dealerCardB"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     app:srcCompat="@android:drawable/btn_default_small" />
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/dealerCardC"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -271,7 +271,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/gameSet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
@@ -299,7 +299,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/userImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
@@ -315,7 +315,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/userID"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -325,7 +325,7 @@
                     android:textSize="25sp" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/userPurse"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -345,14 +345,14 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/userCardA"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 app:srcCompat="@android:drawable/btn_default_small" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/userCardB"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -366,7 +366,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/handQualTag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|center_horizontal"
@@ -374,7 +374,7 @@
                     android:textSize="20sp" />
 
                 <ProgressBar
-                    android:id="@+id/progressBar"
+                    android:id="@+id/handQualMeter"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -390,7 +390,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonFold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
@@ -410,7 +410,7 @@
                     android:orientation="horizontal">
 
                     <SeekBar
-                        android:id="@+id/seekBar"
+                        android:id="@+id/currBet"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="5"
@@ -418,7 +418,7 @@
                         android:progress="200" />
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/currBetVal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -430,7 +430,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonBet"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Bet" />
