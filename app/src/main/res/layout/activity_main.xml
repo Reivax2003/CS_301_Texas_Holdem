@@ -214,28 +214,30 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="0">
 
                 <ProgressBar
                     android:id="@+id/userPlayTimer"
                     style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
                     android:progress="80" />
 
-                <Button
-                    android:id="@+id/settingsMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:layout_weight="5"
-                    android:text="Settings"
-                    android:textSize="14sp" />
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="Time: 25"
+                    android:textSize="30dp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -389,13 +391,6 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/buttonFold"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:text="Fold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -407,13 +402,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:orientation="horizontal">
 
                     <SeekBar
                         android:id="@+id/currBet"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
+                        android:layout_weight="1"
                         android:max="1000"
                         android:progress="200" />
 
@@ -421,7 +417,7 @@
                         android:id="@+id/currBetVal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
                         android:gravity="center_vertical"
                         android:text="TextView"
                         android:textSize="20sp"
@@ -429,11 +425,28 @@
 
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/buttonBet"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Bet" />
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/buttonFold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Fold" />
+
+                    <Button
+                        android:id="@+id/buttonBet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Bet" />
+
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 
