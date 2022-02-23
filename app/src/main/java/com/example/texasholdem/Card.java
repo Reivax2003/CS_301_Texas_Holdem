@@ -9,7 +9,7 @@ import java.util.Arrays;
  * has full card names, ex: 4 of hearts or Ace of Spades
  *
  * @author Xavier Santiago
- * @version 22.02.2022
+ * @version 2.22.2022
  */
 public class Card {
     public char suit;
@@ -30,6 +30,11 @@ public class Card {
     // ex: Card("4S") for 4 of spades
     public Card(String shortName) {
         this.shortName = shortName;
+        /**
+         * Citation (Xavier, 2.22.2022)
+         * Had to check whether substring was inclusive or exclusive on bounds
+         * https://www.javatpoint.com/java-string-substring
+         */
         value = values.indexOf(shortName.substring(0,1));
         this.suit = Character.toUpperCase(shortName.toCharArray()[1]);
         longName = getLongName();
