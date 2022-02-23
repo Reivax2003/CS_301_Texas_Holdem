@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @version 22.02.2022
  */
 public class Card {
-    public Character suit;
+    public char suit;
     public int value;
     public String shortName;
     public String longName;
@@ -20,10 +20,10 @@ public class Card {
             (Arrays.asList(null,null,"2","3","4","5","6","7","8","9","T","J","Q","K","A"));
 
     // ex: Card(4, 'S') for 4 of spades
-    public Card(int value, Character suit) {
+    public Card(int value, char suit) {
         this.suit = Character.toUpperCase(suit); //standardize suit as upper case
         this.value = value;
-        this.shortName = values.get(value)+suit.toString();
+        this.shortName = values.get(value)+suit;
         longName = getLongName();
     }
 
