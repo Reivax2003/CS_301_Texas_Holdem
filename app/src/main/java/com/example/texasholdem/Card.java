@@ -12,10 +12,11 @@ import java.util.Arrays;
  * @version 2.22.2022
  */
 public class Card {
-    public char suit;
-    public int value;
-    public String shortName;
-    public String longName;
+    private char suit;
+    private int value;
+    private String shortName;
+    private String longName;
+    //this array lets us quickly convert between integer value and string value
     private ArrayList<String> values = new ArrayList<String>
             (Arrays.asList(null,null,"2","3","4","5","6","7","8","9","T","J","Q","K","A"));
 

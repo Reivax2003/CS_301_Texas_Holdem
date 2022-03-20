@@ -8,15 +8,15 @@ import android.graphics.Bitmap;
  * @version 2.22.2022
  */
 public class Player {
-    String name;
-    int balance;
-    int bet = 0;
-    Bitmap picture;
-    Card[] hand = new Card[2];
-    boolean folded = false;
+    private String name;
+    private int balance;
+    private int bet = 0;
+    private Bitmap picture;
+    private Card[] hand = new Card[2];
+    private boolean folded = false;
 
     // simple constructor
-    public Player(String name, int balance, Bitmap picture) {
+    public Player(String name, int balance) {//, Bitmap picture) {
         this.name = name;
         this.balance = balance;
         this.picture = picture;
@@ -33,6 +33,13 @@ public class Player {
         //the array is the only thing we really need to do a deep copy of
         hand = orig.hand.clone();
     }
+
+    public String getName(){ return name;}
+
+    public int getBet(){ return bet;}
+    public void addBet(int newBet){ bet += newBet;}
+
+    public void setFold(boolean foldStatus){ folded = foldStatus;}
 
     @Override
     public String toString() {

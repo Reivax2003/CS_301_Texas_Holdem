@@ -56,18 +56,18 @@ public class PokerGameState {
         Player currentPlayer = players.get(playerTurn);
 
         //separated fail conditions for better readability
-        if (currentPlayer.name != player.name) {
+        if (currentPlayer.getName() != player.getName()) {
             return false;
         }
         //in theory this should never happen, since the minimum the game will let you bet is enough to stay in
-        if (currentPlayer.bet + amount < currentBet) {
+        if (currentPlayer.getBet() + amount < currentBet) {
             return false;
         }
 
-       currentPlayer.bet += amount;
+       currentPlayer.addBet(amount);
 
-        if (currentPlayer.bet > currentBet) {
-            currentBet = currentPlayer.bet;
+        if (currentPlayer.getBet() > currentBet) {
+            currentBet = currentPlayer.getBet();
         }
         return true;
     }
@@ -77,11 +77,11 @@ public class PokerGameState {
         Player currentPlayer = players.get(playerTurn);
 
         //needs to be your turn
-        if (currentPlayer.name != player.name) {
+        if (currentPlayer.getName() != player.getName()) {
             return false;
         }
 
-        currentPlayer.folded = true;
+        currentPlayer.setFold(true);
         return true;
     }
 
@@ -89,7 +89,7 @@ public class PokerGameState {
     public int getPool() {
         int pool = 0;
         for (Player each : players) {
-            pool += each.bet;
+            pool += each.getBet();
         }
         return pool;
     }
