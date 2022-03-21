@@ -406,7 +406,7 @@
                     android:orientation="horizontal">
 
                     <SeekBar
-                        android:id="@+id/currBet"
+                        android:id="@+id/currBetSB"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -414,7 +414,7 @@
                         android:progress="200" />
 
                     <TextView
-                        android:id="@+id/currBetVal"
+                        android:id="@+id/currBetTV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="15dp"
