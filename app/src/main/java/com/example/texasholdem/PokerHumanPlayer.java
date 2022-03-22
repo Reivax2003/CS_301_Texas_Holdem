@@ -20,6 +20,23 @@ public class PokerHumanPlayer extends GameHumanPlayer implements View.OnClickLis
     private TextView valueTV;
     private int valueInt;
 
+
+    //TEMPORARY BLANK CLASSES
+    @Override
+    public void onClick(View view) { }
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int i, boolean b) { }
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) { }
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) { }
+    //END TEMPORARY BLANK CLASSES
+
+    /**
+     *
+     * Note from Xavier:
+     * Had to edit this out temporarily as it was throwing errors
+     *
     @Override
     public void onClick(View view) {
         //checks if id equals the bet action.
@@ -75,4 +92,5 @@ public class PokerHumanPlayer extends GameHumanPlayer implements View.OnClickLis
         fold.setOnClickListener(this);
 
     }
+    */
 }

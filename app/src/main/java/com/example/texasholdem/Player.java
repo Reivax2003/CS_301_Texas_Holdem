@@ -40,6 +40,12 @@ public class Player {
     public void addBet(int newBet){ bet += newBet;}
 
     public void setFold(boolean foldStatus){ folded = foldStatus;}
+    public boolean isFolded() {return folded; }
+
+    public Card[] getHand() {return hand.clone();}
+    public void setHand(Card[] hand) {this.hand = hand;}
+    public void giveCard(Card card, int index) { hand[index] = card;}
+
 
     @Override
     public String toString() {

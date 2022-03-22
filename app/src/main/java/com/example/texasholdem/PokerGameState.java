@@ -131,11 +131,11 @@ public class PokerGameState {
         message += Arrays.asList("Pre-Flop", "Post-Flop 1", "Post-Flop 2", "Final Round").get(round);
 
         message += "\n- Pool: "+getPool()+
-                "\n- Turn: "+players.get(playerTurn)+
+                "\n- Turn: "+players.get(playerTurn).getName()+
                 "\n- Required Bet: "+currentBet+
                 "\n- Remaining Time: "+timer+
                 "\n"+
-                "\nDealer's Hand:+\n";
+                "\nDealer's Hand:\n";
 
         for (Card each : dealerHand) {
             message += "- "+each+"\n";
