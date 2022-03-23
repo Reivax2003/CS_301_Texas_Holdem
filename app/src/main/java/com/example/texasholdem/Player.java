@@ -37,7 +37,11 @@ public class Player {
     public String getName(){ return name;}
 
     public int getBet(){ return bet;}
-    public void addBet(int newBet){ bet += newBet;}
+    public void addBet(int newBet){
+
+        bet += newBet;
+        changeBalance(getBet()); //modified method for GameStateTest, may need to modify later
+    }
 
     public void setFold(boolean foldStatus){ folded = foldStatus;}
     public boolean isFolded() {return folded; }
@@ -45,6 +49,16 @@ public class Player {
     public Card[] getHand() {return hand.clone();}
     public void setHand(Card[] hand) {this.hand = hand;}
     public void giveCard(Card card, int index) { hand[index] = card;}
+
+    /**
+     * New methods: getBalance() and changeBalance()
+     * @return
+     */
+    public int getBalance() { return this.balance; }
+
+    public void changeBalance(int betAmount) {
+        this.balance -= betAmount;
+    }
 
 
     @Override

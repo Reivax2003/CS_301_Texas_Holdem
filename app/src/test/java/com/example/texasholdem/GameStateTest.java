@@ -112,4 +112,35 @@ public class GameStateTest {
 
         assertEquals(message, gState.toString());
     }
+    @Test
+    public void BetBalanceTest() {
+        //this will test the functionality of the bet action when it is called by
+        //players, and it will also check whether bet gets removed from user's balance.
+        //In this example we will be ignoring card hands and just create a bet action.
+
+        ArrayList<Player> players = new ArrayList<Player>();
+
+        //set up players
+        Player p1 = new Player("Joe", 1000);
+        players.add(p1);
+        Player p2 = new Player("Mary", 2000);
+        players.add(p2);
+        Player p3 = new Player("Bill", 3000);
+        players.add(p3);
+
+        PokerGameState gState = new PokerGameState(players, 60, 0);
+
+        //make players create action
+        p1.addBet(400);
+        p2.addBet(100);
+
+        //should return 600 given that the first user made a bet of 400.
+        assertEquals(600, p1.getBalance());
+
+        //should return 1900 given that the first user made a bet of 100.
+        assertEquals(1900,p2.getBalance());
+
+    }
+
+
 }
