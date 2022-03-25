@@ -3,9 +3,7 @@ package com.example.texasholdem;
 import android.graphics.Bitmap;
 
 /**
- * Player class containing all variables we need
- * @author Xavier Santiago
- * @version 2.22.2022
+ * IF YOU'RE READING THIS, YOU'RE IN THE OLD PROJECT. GO TO THE NEW ONE
  */
 public class Player {
     private String name;

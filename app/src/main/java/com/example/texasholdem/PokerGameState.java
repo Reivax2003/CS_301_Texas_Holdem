@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * Game State for our game, contains a list of players and other info
- * @author Xavier Santiago
- * @author Milton Nguy
- * @version 2.22.2022
+ * IF YOU'RE READING THIS, YOU'RE IN THE OLD PROJECT. GO TO THE NEW ONE
  */
 public class PokerGameState {
     ArrayList<Player> players;

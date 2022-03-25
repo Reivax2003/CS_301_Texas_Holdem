@@ -4,12 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * Card class containing a value and suit for a card
- * has compressed card names, ex: 4H or AC
- * has full card names, ex: 4 of hearts or Ace of Spades
- *
- * @author Xavier Santiago
- * @version 2.22.2022
+ * IF YOU'RE READING THIS, YOU'RE IN THE OLD PROJECT. GO TO THE NEW ONE
  */
 public class Card {
     private char suit;
